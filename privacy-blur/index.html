@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy blurのプライバシーポリシー / Privacy Policy for the Privacy blur Chrome extension">
+    <meta name="robots" content="index, follow">
+    <title>Privacy blur Privacy Policy / プライバシーポリシー</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --background: #ffffff;
+            --surface: #f6f6f6;
+            --text: #111111;
+            --muted: #606060;
+            --line: #d7d7d7;
+            --accent: #1b5e20;
+            --content-width: 920px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+            font-size: 16px;
+            line-height: 1.85;
+            overflow-wrap: anywhere;
+        }
+
+        a {
+            color: var(--accent);
+            text-underline-offset: 3px;
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -80px;
+            left: 16px;
+            z-index: 20;
+            padding: 10px 14px;
+            background: var(--text);
+            color: #ffffff;
+        }
+
+        .skip-link:focus {
+            top: 16px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--line);
+        }
+
+        .header-inner,
+        main,
+        footer {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin-inline: auto;
+        }
+
+        .header-inner {
+            padding: 64px 0 40px;
+        }
+
+        .product-name {
+            margin: 0 0 10px;
+            color: var(--accent);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.35;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            max-width: 760px;
+            margin: 0;
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 700;
+        }
+
+        .meta {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .meta div {
+            min-width: 0;
+            padding: 16px;
+            border-right: 1px solid var(--line);
+        }
+
+        .meta div:first-child {
+            padding-left: 0;
+        }
+
+        .meta div:last-child {
+            border-right: 0;
+        }
+
+        .meta dt {
+            margin: 0 0 4px;
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .meta dd {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        nav {
+            border-bottom: 1px solid var(--line);
+        }
+
+        .language-nav {
+            display: flex;
+            width: min(calc(100% - 40px), var(--content-width));
+            margin-inline: auto;
+        }
+
+        .language-nav a {
+            display: block;
+            padding: 16px 24px;
+            border-right: 1px solid var(--line);
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .language-nav a:first-child {
+            border-left: 1px solid var(--line);
+        }
+
+        .language-nav a:hover {
+            background: var(--surface);
+        }
+
+        main {
+            padding: 12px 0 72px;
+        }
+
+        .policy-language {
+            padding-top: 64px;
+        }
+
+        .policy-language + .policy-language {
+            margin-top: 72px;
+            border-top: 2px solid var(--text);
+        }
+
+        h2 {
+            margin: 0 0 36px;
+            font-size: clamp(28px, 4vw, 38px);
+        }
+
+        section section {
+            padding: 32px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        section section:first-of-type {
+            border-top: 2px solid var(--text);
+        }
+
+        h3 {
+            margin: 0 0 16px;
+            font-size: 21px;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        ul {
+            margin: 16px 0 0;
+            padding-left: 1.4em;
+        }
+
+        li + li {
+            margin-top: 8px;
+        }
+
+        .contact-list {
+            margin-top: 20px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .contact-list li {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 16px;
+            padding: 12px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .contact-list strong {
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 32px 0 56px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer p + p {
+            margin-top: 8px;
+        }
+
+        @media (max-width: 700px) {
+            .header-inner {
+                padding-top: 40px;
+            }
+
+            .meta {
+                grid-template-columns: 1fr;
+            }
+
+            .meta div,
+            .meta div:first-child {
+                padding: 12px 0;
+                border-right: 0;
+                border-bottom: 1px solid var(--line);
+            }
+
+            .meta div:last-child {
+                border-bottom: 0;
+            }
+
+            .language-nav a {
+                flex: 1;
+                padding-inline: 12px;
+                text-align: center;
+            }
+
+            .contact-list li {
+                grid-template-columns: 1fr;
+                gap: 2px;
+            }
+        }
+
+        @media print {
+            nav,
+            .skip-link {
+                display: none;
+            }
+
+            body {
+                font-size: 11pt;
+            }
+
+            .header-inner,
+            main,
+            footer {
+                width: 100%;
+            }
+
+            .policy-language {
+                break-before: page;
+            }
+
+            .policy-language:first-child {
+                break-before: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main">本文へ移動 / Skip to content</a>
+
+    <header>
+        <div class="header-inner">
+            <p class="product-name">Privacy blur</p>
+            <h1>Privacy Policy<br>プライバシーポリシー</h1>
+
+            <dl class="meta">
+                <div>
+                    <dt>Last updated / 最終更新日</dt>
+                    <dd><time datetime="2026-08-30">2026-08-30</time></dd>
+                </div>
+                <div>
+                    <dt>Publisher / 提供者</dt>
+                    <dd>[開発者名または法人名 / Developer or company name]</dd>
+                </div>
+                <div>
+                    <dt>Contact / お問い合わせ</dt>
+                    <dd>[support@example.com]</dd>
+                </div>
+            </dl>
+        </div>
+    </header>
+
+    <nav aria-label="Language navigation">
+        <div class="language-nav">
+            <a href="#ja" lang="ja">日本語</a>
+            <a href="#en" lang="en">English</a>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section id="ja" class="policy-language" lang="ja" aria-labelledby="ja-title">
+            <h2 id="ja-title">日本語</h2>
+
+            <section aria-labelledby="ja-1">
+                <h3 id="ja-1">1. 本ポリシーについて</h3>
+                <p>本プライバシーポリシーは、Chrome拡張機能「Privacy blur」（以下「本拡張機能」）が利用者データをどのように処理、保存、利用、共有するかを説明します。</p>
+                <p>本拡張機能の主な目的は、離席または無操作時にWebページを視覚的に覆い、画面上の情報を周囲から見えにくくすることです。</p>
+            </section>
+
+            <section aria-labelledby="ja-2">
+                <h3 id="ja-2">2. 端末内で処理または保存する情報</h3>
+                <p>本拡張機能は、機能提供のために次の情報を利用者の端末内で処理またはChromeのローカルストレージへ保存します。</p>
+                <ul>
+                    <li><strong>利用者設定:</strong> 表示言語、自動保護条件、待機時間、保護スタイル、色、ぼかし強度、表示メッセージ、スケジュール、一時停止、解除範囲、その他の設定</li>
+                    <li><strong>サイト情報:</strong> 現在のWebサイトのドメイン、利用者が登録した除外サイトのドメイン、サイト別要素マスクのドメイン</li>
+                    <li><strong>Webページ情報:</strong> 保護表示と要素マスクを適用するためのページDOM、利用者が選択した要素のCSSセレクタおよび最大100文字の表示ラベル</li>
+                    <li><strong>操作状態:</strong> 無操作時間を判定するためのポインター、クリック、キーボード、ホイール、タッチ、スクロール、フォーカス、タブ表示状態等のイベント発生情報。本拡張機能は押されたキーの内容やフォーム入力値を保存しません</li>
+                    <li><strong>利用者が指定したコンテンツ:</strong> 保護画面のメッセージおよび任意で設定したローカル背景画像</li>
+                    <li><strong>解除パスワード情報:</strong> 任意の解除パスワードから生成したランダムソルト付きPBKDF2-SHA-256ハッシュ、反復回数、パスワード文字数、失敗回数、入力制限期限、再入力猶予期限。本拡張機能は平文の解除パスワードを保存しません</li>
+                    <li><strong>動作状態:</strong> 保護中かどうか、保護理由、一時停止期限等</li>
+                </ul>
+                <p>要素マスクを保存すると、選択した要素の文字列の一部が表示ラベルとして端末内に保存される場合があります。保存したくない機密文字列を含む要素は選択しないでください。</p>
+            </section>
+
+            <section aria-labelledby="ja-3">
+                <h3 id="ja-3">3. 情報の利用目的</h3>
+                <p>上記の情報は、次の機能を提供するためだけに利用します。</p>
+                <ul>
+                    <li>自動保護条件とスケジュールの判定</li>
+                    <li>Webページへの保護オーバーレイの表示と解除</li>
+                    <li>サイト除外と要素マスクの適用</li>
+                    <li>利用者が選択した設定の保持</li>
+                    <li>任意の解除パスワードの確認、失敗回数制限、再入力猶予の管理</li>
+                    <li>拡張機能のON/OFF、一時停止、タブ間の保護状態の同期</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="ja-4">
+                <h3 id="ja-4">4. 外部送信、共有、販売</h3>
+                <p>本拡張機能は、上記情報を開発者または第三者のサーバーへ送信しません。</p>
+                <p>本拡張機能は次の機能を使用しません。</p>
+                <ul>
+                    <li>広告</li>
+                    <li>アクセス解析</li>
+                    <li>トラッキング</li>
+                    <li>外部API</li>
+                    <li>外部サーバー</li>
+                    <li>遠隔コード</li>
+                </ul>
+                <p>開発者は、本拡張機能が処理する情報を第三者へ共有、販売、貸与せず、広告、信用評価、融資、その他の目的に利用しません。開発者または第三者の担当者が利用者データを閲覧する仕組みもありません。</p>
+            </section>
+
+            <section aria-labelledby="ja-5">
+                <h3 id="ja-5">5. 権限</h3>
+                <p>本拡張機能は、機能提供のためにChromeのストレージ、アイドル検知、アラーム、コンテキストメニュー、スクリプト適用、および対応Webページへのアクセス権限を使用します。Webページへのアクセスは、保護表示、自動保護条件の検知、サイト除外、要素マスク、および既存タブへの保護コード適用に限定して使用します。</p>
+                <p>Chromeの設定画面、新しいタブ、Chrome Web Storeなど、Chromeが拡張機能の実行を許可しないページにはアクセスできません。</p>
+            </section>
+
+            <section aria-labelledby="ja-6">
+                <h3 id="ja-6">6. 保存期間と削除方法</h3>
+                <p>設定と状態は、利用者が変更、リセット、削除するまでChromeのローカルストレージに保存されます。</p>
+                <ul>
+                    <li>除外サイトと要素マスクは、詳細設定から個別に削除できます</li>
+                    <li>カスタム背景画像は、詳細設定から削除できます</li>
+                    <li>解除パスワードは、パスワード機能のOFFまたはパスワードリセットで削除できます</li>
+                    <li>全設定リセットにより、保存した設定と状態を初期化できます</li>
+                    <li>本拡張機能をアンインストールすると、Chromeが管理する本拡張機能のローカルデータは削除されます</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="ja-7">
+                <h3 id="ja-7">7. セキュリティ</h3>
+                <p>解除パスワードは平文で保存せず、ランダムソルト付きPBKDF2-SHA-256ハッシュとして端末内に保存します。ただし、本拡張機能はOSの画面ロックや端末暗号化の代替ではありません。Chromeプロフィールまたは端末へアクセスできる第三者に対する完全な防御を保証するものではありません。</p>
+            </section>
+
+            <section aria-labelledby="ja-8">
+                <h3 id="ja-8">8. 変更</h3>
+                <p>機能、権限、データ処理方法、法的要件が変わる場合、本ポリシーを更新し、最終更新日を変更します。重要な変更がある場合は、Chrome Web Storeの掲載情報または本拡張機能内で必要な案内を行います。</p>
+            </section>
+
+<p>お問い合わせは、公開している GitHub Issues または公開メールアドレスをご利用ください。  
+GitHub Issues: https://github.com/takahiro0228/privacy-policy/issues</p>
+        </section>
+
+        <section id="en" class="policy-language" lang="en" aria-labelledby="en-title">
+            <h2 id="en-title">English</h2>
+
+            <section aria-labelledby="en-1">
+                <h3 id="en-1">1. About this policy</h3>
+                <p>This Privacy Policy explains how the Chrome extension “Privacy blur” (the “Extension”) processes, stores, uses, and shares user data.</p>
+                <p>The Extension's single purpose is to visually cover webpages when the user steps away or becomes inactive, reducing casual exposure of on-screen information.</p>
+            </section>
+
+            <section aria-labelledby="en-2">
+                <h3 id="en-2">2. Information processed or stored locally</h3>
+                <p>To provide its features, the Extension processes the following information on the user's device or stores it in Chrome local storage:</p>
+                <ul>
+                    <li><strong>User settings:</strong> display language, protection triggers, timers, protection style, colors, blur strength, display message, schedule, pause duration, unlock scope, and related preferences</li>
+                    <li><strong>Site information:</strong> the current website domain, domains the user adds to the exclusion list, and domains associated with site-specific element masks</li>
+                    <li><strong>Webpage information:</strong> the page DOM used to display protection and apply element masks, plus the CSS selector and a display label of up to 100 characters for an element explicitly selected by the user</li>
+                    <li><strong>Activity state:</strong> the occurrence of pointer, click, keyboard, wheel, touch, scroll, focus, and tab-visibility events used to determine inactivity. The Extension does not store the keys pressed or form input values</li>
+                    <li><strong>User-provided content:</strong> the protection-screen message and an optional local background image</li>
+                    <li><strong>Unlock password information:</strong> a PBKDF2-SHA-256 hash generated with a random salt, iteration count, password length, failed-attempt count, lockout deadline, and re-entry grace deadline. The Extension does not store the raw unlock password</li>
+                    <li><strong>Operational state:</strong> whether protection is active, the protection reason, pause deadline, and related state</li>
+                </ul>
+                <p>When the user saves an element mask, part of the selected element's text may be stored locally as its display label. Users should not select an element containing confidential text that they do not want saved locally.</p>
+            </section>
+
+            <section aria-labelledby="en-3">
+                <h3 id="en-3">3. How information is used</h3>
+                <p>The information above is used only to provide these user-facing features:</p>
+                <ul>
+                    <li>Evaluate automatic protection triggers and schedules</li>
+                    <li>Display and remove the webpage protection overlay</li>
+                    <li>Apply website exclusions and element masks</li>
+                    <li>Retain settings selected by the user</li>
+                    <li>Verify the optional unlock password and manage failed-attempt limits and re-entry grace periods</li>
+                    <li>Manage extension on/off state, pauses, and protection state across tabs</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="en-4">
+                <h3 id="en-4">4. External transmission, sharing, and sale</h3>
+                <p>The Extension does not transmit the information described above to the developer's servers or to third-party servers.</p>
+                <p>The Extension does not use:</p>
+                <ul>
+                    <li>Advertising</li>
+                    <li>Analytics</li>
+                    <li>Tracking</li>
+                    <li>External APIs</li>
+                    <li>External servers</li>
+                    <li>Remote code</li>
+                </ul>
+                <p>The developer does not share, sell, or rent data processed by the Extension and does not use it for advertising, credit assessment, lending, or unrelated purposes. There is no mechanism that allows the developer or third-party personnel to view user data processed by the Extension.</p>
+            </section>
+
+            <section aria-labelledby="en-5">
+                <h3 id="en-5">5. Permissions</h3>
+                <p>The Extension uses Chrome permissions for local storage, idle detection, alarms, context menus, script injection, and access to supported webpages. Webpage access is limited to displaying protection, detecting enabled triggers, applying website exclusions and element masks, and applying the packaged protection code to already-open tabs.</p>
+                <p>The Extension cannot access Chrome internal pages, the New Tab page, the Chrome Web Store, or other pages on which Chrome does not allow extensions to run.</p>
+            </section>
+
+            <section aria-labelledby="en-6">
+                <h3 id="en-6">6. Retention and deletion</h3>
+                <p>Settings and operational state remain in Chrome local storage until the user changes, resets, or deletes them.</p>
+                <ul>
+                    <li>Excluded websites and element masks can be deleted from Advanced settings</li>
+                    <li>A custom background image can be removed from Advanced settings</li>
+                    <li>Unlock password data can be deleted by turning off the password feature or using password reset</li>
+                    <li>Reset all settings returns stored settings and state to their defaults</li>
+                    <li>Uninstalling the Extension removes the Extension's local data managed by Chrome</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="en-7">
+                <h3 id="en-7">7. Security</h3>
+                <p>The raw unlock password is not stored. It is stored locally as a PBKDF2-SHA-256 hash with a random salt. However, the Extension is not a substitute for operating-system screen locking or device encryption and cannot guarantee complete protection against a person who can access the user's Chrome profile or device.</p>
+            </section>
+
+            <section aria-labelledby="en-8">
+                <h3 id="en-8">8. Changes</h3>
+                <p>If the Extension's features, permissions, data practices, or legal requirements change, this policy will be updated and the “Last updated” date will be revised. Material changes will be communicated where required through the Chrome Web Store listing or the Extension interface.</p>
+            </section>
+
+            <section aria-labelledby="en-9">
+                <h3 id="en-9">9. Contact</h3>
+                <p>Questions about this policy or the Extension may be sent to:</p>
+                <ul class="contact-list">
+                    <li><strong>Publisher</strong><span>[Developer or company name]</span></li>
+                    <li><strong>Email</strong><span>[support@example.com]</span></li>
+                    <li><strong>Support page</strong><span>[https://example.com/privacy-blur/support]</span></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Privacy blur version 1.0.0</p>
+        <p>This page contains no advertising, analytics, tracking, external scripts, or external resources.</p>
+    </footer>
+</body>
+</html>
