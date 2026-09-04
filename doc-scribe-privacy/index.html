@@ -1,88 +1,207 @@
-Doc Scribe - Privacy Policy
-Last updated: 4 September 2026
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doc Scribe - Privacy Policy / プライバシーポリシー</title>
+<meta name="description" content="Privacy policy for the Doc Scribe Chrome extension. Doc Scribe Chrome 拡張機能のプライバシーポリシー。">
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #666;
+    --line: #e0e0e0;
+    --accent: #1f6f4a;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Yu Gothic", "游ゴシック体", YuGothic, "游ゴシック", "Hiragino Kaku Gothic ProN",
+                 "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    line-height: 1.85;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 8px; }
+  .brand { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
+  h1 { font-size: 24px; font-weight: 600; margin: 0 0 8px; line-height: 1.4; }
+  .updated { font-size: 13px; color: var(--muted); margin: 0; }
+  nav { display: flex; gap: 8px; margin: 20px 0 40px; }
+  nav button {
+    font: inherit; font-size: 13px; cursor: pointer;
+    padding: 6px 16px; border: 1px solid var(--line); background: #fff; color: var(--muted);
+    border-radius: 999px;
+  }
+  nav button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: #f4faf7; }
+  section + section { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--line); }
+  h2 { font-size: 15px; font-weight: 600; margin: 40px 0 10px; }
+  h2:first-of-type { margin-top: 0; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 1.4em; }
+  li { margin-bottom: 4px; }
+  a { color: var(--accent); }
+  .lead { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+  footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+  @media (max-width: 600px) {
+    .wrap { padding: 32px 18px 60px; }
+    body { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-1. Summary
-Doc Scribe does not send any information to a server. It has no account system, no sign-in, no analytics, no advertising and no tracking. It works offline.
+  <header>
+    <p class="brand">Doc Scribe</p>
+    <h1>Privacy Policy / プライバシーポリシー</h1>
+    <p class="updated">Last updated: 4 September 2026 ／ 最終更新日：2026年9月4日</p>
+  </header>
 
-2. What is stored
-The following is stored only in local extension storage (chrome.storage.local) on the user's device:
-- the title, description and step captions of each document
-- the page title and URL at the time of recording (this can be turned off in settings)
-- screenshots, with detected personal data masked
-- annotations added by the user, and the position of step-number markers
-- the extension's settings
+  <nav aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+    <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    <button type="button" data-lang="both" aria-pressed="true">Both / 両方</button>
+  </nav>
 
-3. What is not stored
-- the values typed into form fields
-- passwords and authentication credentials
-- cookies and access tokens
-- screens and browsing activity outside an active recording
+  <!-- ================= English ================= -->
+  <section id="en" lang="en">
+    <p class="lead">English</p>
 
-4. Screenshots
-Screenshots are taken only while a recording is in progress, at the moment the user performs an action. After capture, form fields, email addresses, phone numbers, postal codes and any words or CSS selectors specified by the user are masked.
+    <h2>1. Summary</h2>
+    <p>Doc Scribe does not send any information to a server. It has no account system, no sign-in, no analytics, no advertising and no tracking. It works offline.</p>
 
-When the setting "keep automatic masks editable" is enabled (the default), the unmasked image is retained in local storage so the user can reposition a mask later. That image is never transmitted either. Users who do not want any unmasked image retained can disable the setting; masks are then burned into the image before it is stored, and can no longer be repositioned.
+    <h2>2. What is stored</h2>
+    <p>The following is stored only in local extension storage (chrome.storage.local) on the user's device:</p>
+    <ul>
+      <li>the title, description and step captions of each document</li>
+      <li>the page title and URL at the time of recording (this can be turned off in settings)</li>
+      <li>screenshots, with detected personal data masked</li>
+      <li>annotations added by the user, and the position of step-number markers</li>
+      <li>the extension's settings</li>
+    </ul>
 
-5. Full-screen mode
-If the user switches to full-screen recording, the standard screen-sharing API is used and Chrome asks the user to choose a screen or window. The video is held only in the extension's capture window, one frame is converted to an image, and the stream is then stopped. Automatic masking does not apply in this mode.
+    <h2>3. What is not stored</h2>
+    <ul>
+      <li>the values typed into form fields</li>
+      <li>passwords and authentication credentials</li>
+      <li>cookies and access tokens</li>
+      <li>screens and browsing activity outside an active recording</li>
+    </ul>
 
-6. Third parties
-No information is shared, sold or transferred to any third party. Nobody other than the user, including the developer, can access the recorded content.
+    <h2>4. Screenshots</h2>
+    <p>Screenshots are taken only while a recording is in progress, at the moment the user performs an action. After capture, form fields, email addresses, phone numbers, postal codes and any words or CSS selectors specified by the user are masked.</p>
+    <p>When the setting "keep automatic masks editable" is enabled (the default), the unmasked image is retained in local storage so the user can reposition a mask later. That image is never transmitted either. Users who do not want any unmasked image retained can disable the setting; masks are then burned into the image before it is stored, and can no longer be repositioned.</p>
 
-7. Deletion
-Documents can be deleted individually from the extension. Removing the extension from Chrome deletes all stored data.
+    <h2>5. Full-screen mode</h2>
+    <p>If the user switches to full-screen recording, the standard screen-sharing API is used and Chrome asks the user to choose a screen or window. The video is held only in the extension's capture window, one frame is converted to an image, and the stream is then stopped. Automatic masking does not apply in this mode.</p>
 
-8. Limits of automatic detection
-Automatic detection of personal data is not perfect. Content drawn on a canvas element, inside an iframe, or embedded in an image may not be detected. Users are responsible for reviewing the preview and adding masks manually before exporting or sharing a document.
+    <h2>6. Third parties</h2>
+    <p>No information is shared, sold or transferred to any third party. Nobody other than the user, including the developer, can access the recorded content.</p>
 
-9. Permissions
-Each permission requested by the extension is explained on its Chrome Web Store listing. All permissions serve the single purpose of recording, masking, editing and exporting procedure documents.
+    <h2>7. Deletion</h2>
+    <p>Documents can be deleted individually from the extension. Removing the extension from Chrome deletes all stored data.</p>
 
-10. Contact
-For inquiries, please contact through the public GitHub Issues page or the public contact email.  
-GitHub Issues: https://github.com/takahiro0228/privacy-policy/issues
+    <h2>8. Limits of automatic detection</h2>
+    <p>Automatic detection of personal data is not perfect. Content drawn on a canvas element, inside an iframe, or embedded in an image may not be detected. Users are responsible for reviewing the preview and adding masks manually before exporting or sharing a document.</p>
 
-----------
-Doc Scribe プライバシーポリシー
-最終更新日：2026年9月4日
+    <h2>9. Permissions</h2>
+    <p>Each permission requested by the extension is explained on its Chrome Web Store listing. All permissions serve the single purpose of recording, masking, editing and exporting procedure documents.</p>
 
-1. 基本方針
-Doc Scribe（以下「本拡張機能」）は、利用者の情報を外部のサーバーへ送信しません。アカウント登録、ログイン、解析ツール、広告、トラッキングを一切使用しません。オフラインで動作します。
+    <h2>10. Contact</h2>
+    <p>For inquiries, please contact through the public GitHub Issues page or the public contact email.<br>
+    GitHub Issues: <a href="https://github.com/takahiro0228/privacy-policy/issues">https://github.com/takahiro0228/privacy-policy/issues</a></p>
+  </section>
 
-2. 保存する情報
-以下を、利用者の端末のローカルストレージ（chrome.storage.local）にのみ保存します。
-・手順書のタイトル、説明、各手順の説明文
-・記録時のページタイトルとURL（設定で保存しないよう変更できます）
-・個人情報をマスクしたスクリーンショット
-・利用者が追加した注釈、および操作位置を示す番号枠の位置
-・本拡張機能の設定
+  <!-- ================= 日本語 ================= -->
+  <section id="ja" lang="ja">
+    <p class="lead">日本語</p>
 
-3. 保存しない情報
-・入力欄に入力した文字列そのもの
-・パスワードおよび認証情報
-・Cookie およびアクセストークン
-・記録していない間の画面および閲覧履歴
+    <h2>1. 基本方針</h2>
+    <p>Doc Scribe（以下「本拡張機能」）は、利用者の情報を外部のサーバーへ送信しません。アカウント登録、ログイン、解析ツール、広告、トラッキングを一切使用しません。オフラインで動作します。</p>
 
-4. スクリーンショットの取り扱い
-スクリーンショットは、記録中に利用者が操作を行った時点でのみ取得します。取得後、入力欄、メールアドレス、電話番号、郵便番号、および利用者が指定した語句・CSSセレクタに一致する領域をマスクします。
+    <h2>2. 保存する情報</h2>
+    <p>以下を、利用者の端末のローカルストレージ（chrome.storage.local）にのみ保存します。</p>
+    <ul>
+      <li>手順書のタイトル、説明、各手順の説明文</li>
+      <li>記録時のページタイトルとURL（設定で保存しないよう変更できます）</li>
+      <li>個人情報をマスクしたスクリーンショット</li>
+      <li>利用者が追加した注釈、および操作位置を示す番号枠の位置</li>
+      <li>本拡張機能の設定</li>
+    </ul>
 
-設定「自動マスクを後から編集できるようにする」が有効（初期値）の場合、マスクを後から動かせるようにするため、マスク前の画像がこの端末のローカルストレージに保持されます。この画像も外部へは送信されません。マスク前の画像を残したくない場合は、この設定を無効にしてください。無効にすると保存前に画像へマスクを焼き込むため、後から位置を修正できなくなります。
+    <h2>3. 保存しない情報</h2>
+    <ul>
+      <li>入力欄に入力した文字列そのもの</li>
+      <li>パスワードおよび認証情報</li>
+      <li>Cookie およびアクセストークン</li>
+      <li>記録していない間の画面および閲覧履歴</li>
+    </ul>
 
-5. 画面全体モード
-画面全体を撮るモードに切り替えた場合、ブラウザ標準の画面共有機能を使用し、共有する画面またはウィンドウの選択は Chrome が利用者に尋ねます。映像は本拡張機能の撮影ウィンドウだけで保持し、1コマを画像化した後に停止します。このモードでは自動マスクは働きません。
+    <h2>4. スクリーンショットの取り扱い</h2>
+    <p>スクリーンショットは、記録中に利用者が操作を行った時点でのみ取得します。取得後、入力欄、メールアドレス、電話番号、郵便番号、および利用者が指定した語句・CSSセレクタに一致する領域をマスクします。</p>
+    <p>設定「自動マスクを後から編集できるようにする」が有効（初期値）の場合、マスクを後から動かせるようにするため、マスク前の画像がこの端末のローカルストレージに保持されます。この画像も外部へは送信されません。マスク前の画像を残したくない場合は、この設定を無効にしてください。無効にすると保存前に画像へマスクを焼き込むため、後から位置を修正できなくなります。</p>
 
-6. 第三者への提供
-いかなる情報も第三者へ提供、販売、譲渡しません。開発者を含め、利用者以外の誰も記録内容にアクセスできません。
+    <h2>5. 画面全体モード</h2>
+    <p>画面全体を撮るモードに切り替えた場合、ブラウザ標準の画面共有機能を使用し、共有する画面またはウィンドウの選択は Chrome が利用者に尋ねます。映像は本拡張機能の撮影ウィンドウだけで保持し、1コマを画像化した後に停止します。このモードでは自動マスクは働きません。</p>
 
-7. データの削除
-手順書は本拡張機能の画面から個別に削除できます。Chrome から本拡張機能を削除すると、保存されたすべてのデータも削除されます。
+    <h2>6. 第三者への提供</h2>
+    <p>いかなる情報も第三者へ提供、販売、譲渡しません。開発者を含め、利用者以外の誰も記録内容にアクセスできません。</p>
 
-8. 自動検出の限界について
-個人情報の自動検出は完全ではありません。canvas による描画、iframe 内の要素、画像に埋め込まれた文字などは検出できない場合があります。利用者は、出力・共有の前にプレビューで内容を確認し、必要に応じて手動でマスクを追加する責任を負います。
+    <h2>7. データの削除</h2>
+    <p>手順書は本拡張機能の画面から個別に削除できます。Chrome から本拡張機能を削除すると、保存されたすべてのデータも削除されます。</p>
 
-9. 権限の使用目的
-各権限の使用目的は Chrome ウェブストアの掲載ページに記載しています。すべての権限は、操作の記録・マスク・編集・出力という単一の目的のためにのみ使用します。
+    <h2>8. 自動検出の限界について</h2>
+    <p>個人情報の自動検出は完全ではありません。canvas による描画、iframe 内の要素、画像に埋め込まれた文字などは検出できない場合があります。利用者は、出力・共有の前にプレビューで内容を確認し、必要に応じて手動でマスクを追加する責任を負います。</p>
 
-10. お問い合わせ
-お問い合わせは、公開している GitHub Issues または公開メールアドレスをご利用ください。  
-GitHub Issues: https://github.com/takahiro0228/privacy-policy/issues
+    <h2>9. 権限の使用目的</h2>
+    <p>各権限の使用目的は Chrome ウェブストアの掲載ページに記載しています。すべての権限は、操作の記録・マスク・編集・出力という単一の目的のためにのみ使用します。</p>
+
+    <h2>10. お問い合わせ</h2>
+    <p>お問い合わせは、公開している GitHub Issues または公開メールアドレスをご利用ください。<br>
+    GitHub Issues: <a href="https://github.com/takahiro0228/privacy-policy/issues">https://github.com/takahiro0228/privacy-policy/issues</a></p>
+  </section>
+
+  <footer>
+    <p>Doc Scribe - Chrome extension. This page is the privacy policy referenced from the Chrome Web Store listing.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var buttons = document.querySelectorAll("nav button");
+  var en = document.getElementById("en");
+  var ja = document.getElementById("ja");
+  if (!buttons.length || !en || !ja) return;
+
+  function apply(lang) {
+    en.hidden = (lang === "ja");
+    ja.hidden = (lang === "en");
+    document.documentElement.lang = (lang === "en") ? "en" : "ja";
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].setAttribute("aria-pressed", String(buttons[i].dataset.lang === lang));
+    }
+    try { localStorage.setItem("docscribe-privacy-lang", lang); } catch (e) { /* noop */ }
+  }
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function (event) {
+      apply(event.currentTarget.dataset.lang || "both");
+    });
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem("docscribe-privacy-lang"); } catch (e) { /* noop */ }
+  if (saved !== "en" && saved !== "ja" && saved !== "both") {
+    saved = (String(navigator.language || "").toLowerCase().indexOf("ja") === 0) ? "ja" : "en";
+  }
+  apply(saved);
+})();
+</script>
+</body>
+</html>
